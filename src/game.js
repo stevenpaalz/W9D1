@@ -24,7 +24,7 @@ class Game {
     }
 
     draw(ctx) {
-        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        ctx.clearRect(0, 0, Game.DIM_X, Game.DIM_Y);
         this.asteroids.forEach(asteroid => asteroid.draw(ctx));
     }
 
