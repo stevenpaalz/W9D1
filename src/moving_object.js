@@ -6,7 +6,13 @@ class MovingObject {
         this.color = options["color"];
     }
 
-
+    draw(ctx) {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(...this.pos, this.radius, 0, (2 * Math.PI));
+        ctx.closePath();
+        ctx.fill();
+    }
 }
 
 module.exports = MovingObject;
