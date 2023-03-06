@@ -1,7 +1,10 @@
 console.log("Webpack is working!")
 
-const MovingObject = require("./moving_object.js")
-window.movingObject = MovingObject;
+import MovingObject from "./moving_object.js";
+window.MovingObject = MovingObject;
+
+import Asteroid from "./asteroid.js";
+window.Asteroid = Asteroid;
 
 
 const canvas = document.getElementById("game-canvas");

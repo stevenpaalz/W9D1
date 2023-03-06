@@ -13,6 +13,11 @@ class MovingObject {
         ctx.closePath();
         ctx.fill();
     }
+
+    move() {
+        this.pos = [this.pos[0] + this.vel[0], this.pos[1] + this.vel[1]];
+    }
 }
 
-module.exports = MovingObject;
+export default MovingObject;
+// module.exports = MovingObject;
